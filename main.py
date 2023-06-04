@@ -86,6 +86,41 @@ print(beyaz_yaka2)
 beyaz_yaka2.zam_hakki()
 print(f"Yeni Maaş: {beyaz_yaka2.get_maas()} TL")
 print()
+# DataFrame oluşturulması
+data = {
+    'TC No': [insan1.get_tc_no(), insan2.get_tc_no(), issiz1.get_tc_no(), issiz2.get_tc_no(), issiz3.get_tc_no(),
+              calisan1.get_tc_no(), calisan2.get_tc_no(), mavi_yaka1.get_tc_no(), mavi_yaka2.get_tc_no(),
+              beyaz_yaka1.get_tc_no(), beyaz_yaka2.get_tc_no()],
+    'Ad': [insan1.get_ad(), insan2.get_ad(), issiz1.get_ad(), issiz2.get_ad(), issiz3.get_ad(),
+           calisan1.get_ad(), calisan2.get_ad(), mavi_yaka1.get_ad(), mavi_yaka2.get_ad(),
+           beyaz_yaka1.get_ad(), beyaz_yaka2.get_ad()],
+    'Soyad': [insan1.get_soyad(), insan2.get_soyad(), issiz1.get_soyad(), issiz2.get_soyad(), issiz3.get_soyad(),
+              calisan1.get_soyad(), calisan2.get_soyad(), mavi_yaka1.get_soyad(), mavi_yaka2.get_soyad(),
+              beyaz_yaka1.get_soyad(), beyaz_yaka2.get_soyad()],
+    'Yaş': [insan1.get_yaş(), insan2.get_yaş(), issiz1.get_yaş(), issiz2.get_yaş(), issiz3.get_yaş(),
+            calisan1.get_yaş(), calisan2.get_yaş(), mavi_yaka1.get_yaş(), mavi_yaka2.get_yaş(),
+            beyaz_yaka1.get_yaş(), beyaz_yaka2.get_yaş()],
+    'Cinsiyet': [insan1.get_cinsiyet(), insan2.get_cinsiyet(), issiz1.get_cinsiyet(), issiz2.get_cinsiyet(),
+                 issiz3.get_cinsiyet(), calisan1.get_cinsiyet(), calisan2.get_cinsiyet(),
+                 mavi_yaka1.get_cinsiyet(), mavi_yaka2.get_cinsiyet(), beyaz_yaka1.get_cinsiyet(),
+                 beyaz_yaka2.get_cinsiyet()],
+    'Uyruk': [insan1.get_uyruk(), insan2.get_uyruk(), issiz1.get_uyruk(), issiz2.get_uyruk(), issiz3.get_uyruk(),
+              calisan1.get_uyruk(), calisan2.get_uyruk(), mavi_yaka1.get_uyruk(), mavi_yaka2.get_uyruk(),
+              beyaz_yaka1.get_uyruk(), beyaz_yaka2.get_uyruk()],
+    'Statü': [insan1.get_statu(), insan2.get_statu(), issiz1.get_statu(), issiz2.get_statu(), issiz3.get_statu(),
+              "Çalışan", "Çalışan", "Mavi Yaka", "Mavi Yaka", "Beyaz Yaka", "Beyaz Yaka"],
+    'Sektör': ["-", "-", "-", "-", "-", calisan1.get_sektor(), calisan2.get_sektor(), mavi_yaka1.get_sektor(),
+               mavi_yaka2.get_sektor(), beyaz_yaka1.get_sektor(), beyaz_yaka2.get_sektor()],
+    'Maaş': ["-", "-", "-", "-", "-", calisan1.get_maas(), calisan2.get_maas(), mavi_yaka1.get_maas(),
+             mavi_yaka2.get_maas(), beyaz_yaka1.get_maas(), beyaz_yaka2.get_maas()]
+}
+
+df = pd.DataFrame(data)
+
+# DataFrame'in yazdırılması
+print("Veri Tablosu:")
+print(df)
+
 
 
 
