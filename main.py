@@ -40,4 +40,17 @@ print(issiz3)
 issiz3.statu_bul()
 print(f"Statü: {issiz3.get_statu()}")
 print()
+# Calisan sınıfı için örnek nesneler oluşturulması
+calisan1 = Calisan("15648965423", "Fatma", "Can", 28, "Kadın", "Türk", "Bilişim", 5000)
+calisan2 = Calisan("23072002169", "Ahmet", "Demir", 35, "Erkek", "Türk", "Muhasebe", 6000)
+
+# Calisan sınıfı için örnek nesnelerin bilgilerinin yazdırılması
+print("Calisan 1:")
+print(calisan1)
+print()
+
+print("Calisan 2:")
+print(calisan2)
+print()
+
 
