@@ -53,4 +53,41 @@ print("Calisan 2:")
 print(calisan2)
 print()
 
+# MaviYaka sınıfı için örnek nesneler oluşturulması
+mavi_yaka1 = MaviYaka("56423136987", "Ayşe", "Kara", 32, "Kadın", "Türk", "Üretim", 4500, 200)
+mavi_yaka2 = MaviYaka("16022003192", "Mehmet", "Yeşil", 40, "Erkek", "Türk", "Lojistik", 5500, 250)
+
+# MaviYaka sınıfı için örnek nesnelerin bilgilerinin yazdırılması
+print("Mavi Yaka 1:")
+print(mavi_yaka1)
+mavi_yaka1.zam_hakki()
+print(f"Yeni Maaş: {mavi_yaka1.get_maas()} TL")
+print()
+
+print("Mavi Yaka 2:")
+print(mavi_yaka2)
+mavi_yaka2.zam_hakki()
+print(f"Yeni Maaş: {mavi_yaka2.get_maas()} TL")
+print()
+
+# BeyazYaka sınıfı için örnek nesneler oluşturulması
+beyaz_yaka1 = BeyazYaka("85426933125", "Ali", "Beyaz", 38, "Erkek", "Türk", "Finans", 8000, 300)
+beyaz_yaka2 = BeyazYaka("53403422475", "Fatma", "Can", 42, "Kadın", "Türk", "Pazarlama", 9000, 400)
+
+# BeyazYaka sınıfı için örnek nesnelerin bilgilerinin yazdırılması
+print("Beyaz Yaka 1:")
+print(beyaz_yaka1)
+beyaz_yaka1.zam_hakki()
+print(f"Yeni Maaş: {beyaz_yaka1.get_maas()} TL")
+print()
+
+print("Beyaz Yaka 2:")
+print(beyaz_yaka2)
+beyaz_yaka2.zam_hakki()
+print(f"Yeni Maaş: {beyaz_yaka2.get_maas()} TL")
+print()
+
+
+
+
 
